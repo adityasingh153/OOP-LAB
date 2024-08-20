@@ -1,0 +1,24 @@
+#include<iostream>
+class circle{
+    float radius;
+    const float PI=3.14;
+
+    public:
+    static int count;
+
+    circle(){
+        radius = 0.0;
+    }
+    circle (float r){
+        radius = r;
+
+    }
+    float circleArea()const{
+        return PI * radius * radius; 
+    }
+};
+int main (){
+    circle obj(9);
+    std::cout<<obj.circleArea();
+    return 0;
+}
